@@ -1,4 +1,4 @@
-delete_all(X,[],[]).
+delete_all(_,[],[]).
 delete_all(X,[H|T],R):-
 H = X,
 delete_all(X,T,R).

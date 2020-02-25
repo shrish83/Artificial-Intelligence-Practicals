@@ -1,6 +1,6 @@
 sublist([],[]):-print("It is a sublist").
-sublist([], [|]):-print("It is a sublist").
-sublist([|], []):-print("Not a sublist").
+sublist([], [_|_]):-print("It is a sublist").
+sublist([_|_], []):-print("Not a sublist").
 sublist([H|T], [H1|T1]):-
 (
     H = H1
